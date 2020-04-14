@@ -1,0 +1,126 @@
+import { hack } from '@mdx-deck/themes'
+import {
+  Image,
+} from 'mdx-deck'
+
+# DevOps and CI/CD
+@gsmlg
+
+---
+
+## 什么是DevOps
+
+---
+
+
+## DevOps - Developments and Operations
+
+## 开发运维
+
+---
+
+DevOps is a set of practices that combines software development and information-technology operations 
+which aims to shorten the systems development life cycle and provide continuous delivery with high software quality.
+
+    --- wikipedia
+
+---
+<Image
+  src="https://blog.xebialabs.com/wp-content/uploads/2016/03/DevOps-cycle-PPT-COLOURS.png"
+  width="80%"
+/>
+
+---
+
+## CI/CD
+continuous intergration and either continuous delivery or continuous department
+
+## 持续集成与持续发布、持续部署
+
+---
+
+In software engineering, CI/CD or CICD generally refers to the combined practices of continuous integration and either continuous delivery or continuous deployment. In the context of corporate communication, CI/CD can also refer to the overall process of corporate identity and corporate design.
+    --- wikipedia
+
+---
+
+如何实现DevOps？
+
+<Steps>
+
+- 标准化
+- 自动化
+- 流水线
+
+</Steps>
+
+---
+
+### 如何标准化？
+
+使用容器技术，在容器中可以保证运行环境在各个阶段的一致性
+
+---
+
+### 如何自动化？
+
+容器技术提供了可受信赖的一致运行环境，这个时候大大简化了自动化部署
+借助kubernetes可以很简单的实现自动化
+
+---
+
+### 创建流水线
+
+使用Kuberntes的Tekton Pipeline来自动完成工作流，实现DevOps
+
+---
+
+持续集成服务软件 Jenkins X
+
+Jenkins X provides automated CI+CD for Kubernetes with Preview Environments on Pull Requests using Tekton, Knative, Prow, Skaffold and Helm
+
+---
+
+Jenkins X 涉及太多，这里只讲几个部分
+
+- Prow
+- Skaffold
+- Tekton
+
+---
+
+### Prow
+
+是Kubernetes项目开发的用户管理Kuberntes开发的一套CI/CD系统
+
+提供了成套的Web Hook来处理任务
+
+可以实现GitOpts，ChatOpts
+
+---
+
+### Skaffold
+
+Google Container Toolkit
+
+开发工具，实现在本地开发，并在集群中运行程序的编译和预览功能
+
+--- 
+
+### Tekton 
+
+云原生的流水线，实现自由配置自动化流水线
+
+
+
+
+
+
+
+
+
+
+
+
+
+
